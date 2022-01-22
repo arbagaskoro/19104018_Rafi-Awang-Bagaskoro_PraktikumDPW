@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- external script -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- even handling -->
+    <Button onclick="tampil()">Hallo</Button>
+
+    <br>
+    <input type="color" id="warna">
+
+    <!-- change background -->
+    <form name="go">
+        <input type="radio" name="C1" onclick="document.bgColor='yellow'">
+        <input type="radio" name="C1" onclick="document.bgColor='blue'">
+        <input type="radio" name="C1" onclick="document.bgColor='green'">
+    </form>
+    <br>
+    <input type="button" value="default" onclick="document.bgColor='white'">
+
+    <!-- menampilkan pop up nama -->
+    <script>
+        let x = window.prompt("Masukkan Nama Anda")
+        alert('Hallo ' + x)
+    </script>
+
+    <!-- text formating -->
+    <script>
+        var message = "Welcome to my site"
+        document.write(message.toUpperCase().bold())
+    </script>
+
+    <!-- penanganan objek string -->
+    <form name="test" onsubmit="checkemail(this.test2.value);return false">
+        <input type="text" size="20" name="test2"> <input type="submit" value="Submit">
+    </form>
+    <script type="text/javascript">
+        function checkemail(email){
+            if(email.indexOf("@") !=-1 && email.indexOf(".") !=-1){
+                alert("Apakah alamat email sudah benar?")
+            }else{
+                alert("Penulisan email salah")
+            }
+        }
+    </script>
+
+    <!-- membuka window di js -->
+    <script>
+        function bukaWindow(){
+            window.open("https://www.google.com", "google", "width=400, height=300, toolbar=1")
+        }
+    </script>
+    <input type="button" onclick="bukaWindow()" value="Open">
+
+    <!-- alert, confirm and prompt -->
+    <script type="text/javascript">
+        var y = window.confirm("Are you sure?")
+        if(y){
+            window.alert("Go to next job")
+        }else{
+            window.alert("repeat again until you can solve it")
+        }
+    </script>
+</body>
+</html>

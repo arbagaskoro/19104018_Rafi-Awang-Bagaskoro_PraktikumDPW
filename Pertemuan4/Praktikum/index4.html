@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .heading{
+            color : rebeccapurple;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla provident optio a rerum ipsam assumenda reprehenderit. Corporis amet facilis dicta quam nulla exercitationem eius ipsa voluptatum. Consequatur atque cum assumenda!
+    </h1>
+    <button id="ganti">Ganti</button>
+    <script>
+        $("#ganti").on("click", function(){
+            $("h1").addClass("heading")
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Latihan</title>
+</head>
+<body>
+    <br />
+    <font type="arial" size="5">
+    <div>
+        <!-- table menampilkan informasi dalam bentuk sel terdiri baris dan kolom -->
+        <table>
+            <!-- sebuah table head -->
+            <thead>
+                <font type="arial" font size="6">
+                    <b>Form HTML</b>
+                </font>
+            </thead>
+            <!-- definisi pembuatan baris pada tabel -->
+            <tr>
+                <!-- membuat kolom di setiap baris pada tabel -->
+                <td>Name</td>
+                <td>:</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="gender" value="M">Man
+                    <input type="radio" name="gender" value="W">Woman
+                </td>
+            </tr>
+            <tr>
+                <td>Addres</td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="address">
+                </td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>:</td>
+                <td>
+                    <select name="Country" style="font-size: 20px;">
+                        <option value="ina">Indonesia</option>
+                        <option value="usa">Amerika Serikat</option>
+                        <option value="sg">Singapura</option>
+                      </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td>
+                  <input type="text" name="email">
+                </td>
+              </tr>
+            <tr>
+                <td>Photo</td>
+                <td>:</td>
+                <td>
+                    <form>
+                        <input type="text" name="photo">
+                        <input type="Submit" name="Browse" value="Browse...">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Comment</td>
+                <td>:</td>
+                <td colspan="3">
+                    <textarea name="comment"cols="30" rows="5"></textarea>
+                    <input type="Submit" name="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

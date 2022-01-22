@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima impedit
+      debitis recusandae animi laudantium, consectetur, quasi quia eaque optio,
+      enim illum cum. Nostrum unde eaque repellendus voluptatem consequuntur nam
+      libero!
+    </p>
+    <p>
+      Quo distinctio est at quam laudantium consectetur asperiores. Aspernatur
+      sed id numquam quos aut minus enim. Esse ullam quo eius. Natus cum dolorem
+      tempora repellat distinctio dicta rerum nobis. Illo qui est ipsa dolore
+      occaecati odio qui harum necessitatibus. Ea quia qui dolorem deserunt
+      ipsam occaecati eveniet deserunt qui.
+    </p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <script>
+      // hide and show button
+      $("#hide").on("click", function () {
+        $("p").hide();
+      });
+
+      $("#show").on("click", function () {
+        $("p").show();
+      });
+
+      $("#toggle").on("click", function () {
+        $("p").toggle();
+      });
+    </script>
+  </body>
+</html>

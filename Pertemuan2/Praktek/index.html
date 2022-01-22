@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan CSS</title>
+
+    <style>
+        /* internal css */
+        #kotak2{
+            background-color: red;
+            height: 200px;
+            width: 100%;
+            margin-top: 10px;
+
+        }
+        .inputform{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        h1{
+            color: black;
+            background-color: blue;
+            text-align: center;
+        }
+        h1:hover{
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+
+    <!-- pemanggilan css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <h1>Hallo</h1>
+    <!-- inline css -->
+    <div id="kotak" style="background-color: #ff0; height: 200px; width: 100%;">
+    </div>
+
+    <div id="kotak2">
+
+    </div>
+
+    <input type="text" name="nama" class="inputform" placeholder="masukkan nama">
+    <table class="tb" border="1px">
+        <tr>
+            <th>Nama</th>
+            <th>Prodi</th>
+        </tr>
+        <tr>
+            <td>Rizki</td>
+            <td>RPL</td>
+        </tr>
+        <tr>
+            <td>Gracia</td>
+            <td>RPL</td>
+        </tr>
+        <tr>
+            <td>Alya</td>
+            <td>RPL</td>
+        </tr>
+    </table>
+</body>
+</html>
